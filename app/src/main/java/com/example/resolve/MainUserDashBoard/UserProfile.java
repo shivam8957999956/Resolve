@@ -52,7 +52,7 @@ public class UserProfile extends AppCompatActivity {
         scanner.setVisibility(View.GONE);
         simpleArcLoader.setVisibility(View.VISIBLE);
         simpleArcLoader.start();
-
+        //this new
         fetchData();
 
         scanner.setOnClickListener(new View.OnClickListener() {

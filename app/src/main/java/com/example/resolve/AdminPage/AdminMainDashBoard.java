@@ -30,6 +30,8 @@ public class AdminMainDashBoard extends AppCompatActivity {
     }
     public  void allProblem(View view){
         startActivity(new Intent(getApplicationContext(),AdminAllProblems.class));
+    }public  void profile(View view){
+        startActivity(new Intent(getApplicationContext(),AdminProfile.class));
     }
 
 }

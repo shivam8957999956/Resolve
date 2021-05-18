@@ -11,8 +11,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Sign In"
-        android:textColor="@color/black"
+        android:text="SignIn"
+        android:fontFamily="@font/amaranth"
+        android:textColor="@color/teal_200"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:textSize="55sp" />
 
     <LinearLayout

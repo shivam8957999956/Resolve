@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/lighwhite"
     android:layout_height="match_parent"
     tools:context=".MainUserDashBoard.UserProfile">
 
@@ -69,6 +70,7 @@
                     android:layout_marginBottom="20dp">
 
                     <TextView
+                        android:id="@+id/email1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Email"
@@ -81,8 +83,9 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:text="not set"
+                        android:layout_toLeftOf="@+id/email1"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="15sp" />
                 </RelativeLayout>
 
                 <RelativeLayout

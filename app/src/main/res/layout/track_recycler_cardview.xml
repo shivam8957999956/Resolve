@@ -57,8 +57,8 @@
             android:layout_below="@+id/category"
             android:text="MessaFDdfsdfsdddfsdfsdfdsfsdsdeterretfsdgesodjoasdjosadoasjdoisjdoisjdoadoaisjdoajdossodjs"
             android:lines="2"
-
-            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
             android:textSize="18sp" />
         <TextView
             android:id="@+id/viewmore"

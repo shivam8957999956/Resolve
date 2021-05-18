@@ -7,7 +7,6 @@
     tools:context=".MainUser.UserLogin">
 
     <com.leo.simplearcloader.SimpleArcLoader
-
         android:id="@+id/loader"
         android:layout_width="60dp"
         android:layout_height="60dp"

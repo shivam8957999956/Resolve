@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/lighwhite"
     android:layout_height="match_parent"
-    tools:context=".MainUserDashBoard.UserProfile">
+    tools:context=".AdminPage.AdminProfile">
+
 
     <RelativeLayout
         android:id="@+id/header"
@@ -117,12 +117,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Admission No."
+                        android:text="Position"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 
                     <TextView
-                        android:id="@+id/admission_number"
+                        android:id="@+id/position"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
@@ -131,30 +131,11 @@
                         android:textSize="20sp" />
                 </RelativeLayout>
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="IdVerification"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/verifyID"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:text="not set"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-                </RelativeLayout>
             </LinearLayout>
 
             <Button
-                android:id="@+id/start_scanner"
+                android:id="@+id/edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/main"
@@ -162,19 +143,13 @@
                 android:layout_marginTop="50dp"
                 android:layout_marginRight="20dp"
                 android:background="@color/teal_200"
-                android:text="Complete Your Verification"
+                android:text="Edit your prifile"
                 android:textColor="@color/white"></Button>
-            <TextView
-                android:id="@+id/stat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textColor="@color/teal_700"
-                android:layout_below="@id/main"
-                android:layout_marginTop="20dp"
-                android:layout_centerInParent="true"/>
         </RelativeLayout>
 
     </ScrollView>
+
+
+
 
 </RelativeLayout>

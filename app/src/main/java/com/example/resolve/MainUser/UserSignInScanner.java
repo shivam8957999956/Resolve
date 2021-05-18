@@ -61,6 +61,7 @@ public class UserSignInScanner extends AppCompatActivity implements ZXingScanner
 
     @Override
     public void handleResult(Result rawResult) {
+      //  UserProfile.verfi.setText(rawResult.getText());
         String email= FirebaseAuth.getInstance().getCurrentUser().getEmail();
         String adMn=email.substring(email.indexOf('.')+1,email.indexOf('@'));
 
@@ -77,6 +78,7 @@ public class UserSignInScanner extends AppCompatActivity implements ZXingScanner
             myRef.child(adMn).child("name").setValue(name);
             UserProfile.name.setText(name);
             UserProfile.verfi.setText("verified");
+
             UserProfile.stat.setText("Verification Completed");
             UserProfile.scanner.setVisibility(View.GONE);
 

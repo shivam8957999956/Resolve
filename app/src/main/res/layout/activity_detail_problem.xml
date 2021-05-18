@@ -96,7 +96,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
-                    android:text="Question:"
+                    android:text="Description:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -113,15 +113,15 @@
 
             <Button
                 android:id="@+id/open"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/green_hollowbox"
-                android:padding="10dp"
+                android:padding="5dp"
                 android:text="Resolve"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="15sp" />
 
             <LinearLayout
                 android:id="@+id/response_layout"
@@ -129,7 +129,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_margin="5dp"
-                android:visibility="visible">
+                android:visibility="gone">
 
                 <EditText
                     android:id="@+id/response"
@@ -152,7 +152,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/light_green"
+                    android:background="@drawable/green_hollowbox"
                     android:text="finish"
                     android:textColor="@color/white"
                     android:textSize="20sp" />

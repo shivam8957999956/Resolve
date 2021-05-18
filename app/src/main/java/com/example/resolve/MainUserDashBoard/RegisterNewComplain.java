@@ -157,7 +157,7 @@ public class RegisterNewComplain extends AppCompatActivity {
                                 String email= FirebaseAuth.getInstance().getCurrentUser().getEmail();
 
                                 Calendar calendar=Calendar.getInstance();
-                                java.text.SimpleDateFormat simpleDateFormat=new java.text.SimpleDateFormat("dd-mm-yyyy hh:mm:ss a");
+                                java.text.SimpleDateFormat simpleDateFormat=new java.text.SimpleDateFormat("dd-MM-yyyy hh:mm:ss a");
                                 String dateTime=simpleDateFormat.format(calendar.getTime());
 
 

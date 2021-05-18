@@ -12,14 +12,14 @@
         android:layout_marginTop="10dp"
         android:text="time"
         android:textStyle="bold"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/teal_200"
         android:textSize="15sp" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/time"
-        android:layout_margin="10dp"
+        android:layout_margin="8dp"
         android:background="@drawable/white"
         android:elevation="5dp"
         android:padding="10dp">
@@ -29,7 +29,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Subject"
-            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textColor="@color/teal_200"
             android:textSize="18sp" />
 
         <View
@@ -44,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/subject"
             android:text="categories"
-            android:textColor="@color/black"
+            android:textColor="@color/grey"
             android:textSize="15sp" />
 
 
@@ -58,7 +59,7 @@
             android:text="MessaFDdfsdfsdddfsdfsdfdsfsdsdeterretfsdgesodjoasdjosadoasjdoisjdoisjdoadoaisjdoajdossodjs"
             android:lines="2"
             android:layout_marginTop="10dp"
-            android:textColor="@color/grey"
+            android:textColor="@color/black"
             android:textSize="18sp" />
         <TextView
             android:id="@+id/viewmore"

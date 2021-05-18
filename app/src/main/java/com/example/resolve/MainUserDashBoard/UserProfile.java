@@ -22,11 +22,12 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.leo.simplearcloader.SimpleArcLoader;
 
 public class UserProfile extends AppCompatActivity {
 
     LinearLayout linearLayout;
-
+    SimpleArcLoader simpleArcLoader;
     public  static String f="";
     String email,adMn;
     public static TextView name,emailT,admT,verfi,stat;
@@ -40,6 +41,7 @@ public class UserProfile extends AppCompatActivity {
         scanner=findViewById(R.id.start_scanner);
         name=findViewById(R.id.name);
         stat=findViewById(R.id.stat);
+        simpleArcLoader=findViewById(R.id.loader);
         emailT=findViewById(R.id.email);
         admT=findViewById(R.id.admission_number);
         verfi=findViewById(R.id.verifyID);
@@ -48,13 +50,18 @@ public class UserProfile extends AppCompatActivity {
         linearLayout=findViewById(R.id.main);
         linearLayout.setVisibility(View.GONE);
         scanner.setVisibility(View.GONE);
+        simpleArcLoader.setVisibility(View.VISIBLE);
+        simpleArcLoader.start();
 
         fetchData();
 
         scanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 startActivity(new Intent(getApplicationContext(), UserSignInScanner.class));
+
+
 
             }
         });
@@ -77,11 +84,12 @@ public class UserProfile extends AppCompatActivity {
                     name.setText(snapshot.child(adMn).child("name").getValue(String.class));
                     if(verfi.getText().equals("skipped"))
                         scanner.setVisibility(View.VISIBLE);
-                    if(verfi.getText().equals("verified"))
-                    {
-                        verfi.setTextColor(getColor(R.color.teal_7001));
-                    }
+//                    if(verfi.getText().equals("verified"))
+//                    {
+//                        verfi.setTextColor(getColor(R.color.teal_7001));
+//                    }
                     linearLayout.setVisibility(View.VISIBLE);
+                    simpleArcLoader.setVisibility(View.GONE);
 
                 }
                 else{

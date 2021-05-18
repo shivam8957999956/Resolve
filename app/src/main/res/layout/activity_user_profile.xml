@@ -24,6 +24,16 @@
             android:textStyle="bold" />
 
     </RelativeLayout>
+    <com.leo.simplearcloader.SimpleArcLoader
+
+        android:id="@+id/loader"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:visibility="visible"
+        app:arc_style="simple_arc"></com.leo.simplearcloader.SimpleArcLoader>
 
     <ScrollView
         android:layout_width="match_parent"

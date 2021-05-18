@@ -60,7 +60,7 @@ public class UserSignIn extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         simpleArcLoader.start();
         simpleArcLoader.setVisibility(View.VISIBLE);
-        simpleArcLoader.setVisibility(View.GONE);
+        simpleArcLoader.setVisibility(View.VISIBLE);
 
    //     Toast.makeText(this, adNum+" "+email , Toast.LENGTH_SHORT).show();
         if(isValidEmail(email)) {

@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.resolve.AllAnnoucements;
 import com.example.resolve.MainUser.UserLogin;
 import com.example.resolve.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -32,6 +33,8 @@ public class AdminMainDashBoard extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),AdminAllProblems.class));
     }public  void profile(View view){
         startActivity(new Intent(getApplicationContext(),AdminProfile.class));
+    }public  void makeannounce(View view){
+        startActivity(new Intent(getApplicationContext(), AllAnnoucements.class));
     }
 
 }

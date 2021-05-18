@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Resolve">
-        <activity android:name=".AdminPage.AdminProfile"></activity>
+        <activity android:name=".AllAnnoucements"></activity>
+        <activity android:name=".AdminPage.AdminProfile" />
         <activity android:name=".MainUserDashBoard.NewTestActivity" />
         <activity android:name=".AdminPage.MainActivityad" />
         <activity android:name=".DetailProblem" />

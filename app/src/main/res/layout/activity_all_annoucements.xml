@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllAnnoucements">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_dashboard_background"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Announcements"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/title"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Title"
+                android:layout_margin="10dp"
+                android:textColorHint="@color/teal_700"
+                app:boxStrokeColor="@color/teal_700"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/teal_200"
+                app:hintTextColor="@color/teal_200"
+                app:startIconTint="@color/teal_200">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <EditText
+                android:id="@+id/annouce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/annnouncebox"
+                android:gravity="top|left"
+                android:hint="Type here....."
+                android:inputType="textMultiLine"
+                android:lines="15"
+                android:maxLines="25"
+                android:minLines="15"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+            <ImageView
+                android:onClick="submit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_send_24"
+                android:layout_gravity="end"
+                app:tint="@color/teal_700"
+                android:layout_margin="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

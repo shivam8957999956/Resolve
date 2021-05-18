@@ -17,8 +17,8 @@
 
         <ImageView
             android:id="@+id/menu"
-            android:layout_width="65dp"
-            android:layout_height="26dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:onClick="profile"
             android:src="@drawable/profile_icon"
             app:tint="@color/white" />
@@ -68,7 +68,7 @@
                 android:background="@drawable/green_hollowbox"
                 android:elevation="5dp"
                 android:onClick="registerNewComplains"
-                android:padding="20dp">
+                android:padding="15dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -87,7 +87,7 @@
                 android:background="@drawable/green_hollowbox"
                 android:elevation="5dp"
                 android:onClick="traceYourComplain"
-                android:padding="20dp">
+                android:padding="15dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -105,7 +105,7 @@
                 android:layout_margin="14dp"
                 android:background="@drawable/green_hollowbox"
                 android:elevation="5dp"
-                android:padding="20dp">
+                android:padding="15dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -124,12 +124,12 @@
 
                 android:background="@drawable/light_green"
                 android:elevation="5dp"
-                android:padding="20dp">
+                android:padding="15dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Explore Already Asked Questions?"
+                    android:text="Transpirancy"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />

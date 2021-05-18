@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.resolve">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Resolve">
+        <activity android:name=".DetailProblem"></activity>
+        <activity android:name=".AdminPage.AdminAllProblems" />
+        <activity android:name=".MainUserDashBoard.ExpandProblems" />
+        <activity android:name=".MainUserDashBoard.UserProfile" />
+        <activity android:name=".AdminPage.AdminMainDashBoard" />
+        <activity android:name=".AdminPage.AdminSignIn" />
+        <activity android:name=".AdminPage.AdminLogin" />
+        <activity android:name=".MainUserDashBoard.PreviousComplains" />
+        <activity android:name=".MainUserDashBoard.AlreadyAskedQuestion" />
+        <activity android:name=".MainUserDashBoard.TraceYourComplain" />
+        <activity android:name=".MainUserDashBoard.RegisterNewComplain" />
+        <activity android:name=".MainUserDashBoard.MainUserDashBoard" />
+        <activity android:name=".MainUser.UserSignInFinal" />
+        <activity android:name=".MainUser.UserSignInScanner" />
+        <activity android:name=".MainUser.UserSignIn" />
+        <activity android:name=".MainUser.UserLogin" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

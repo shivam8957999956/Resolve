@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "55155939265",
+    "project_id": "resolve-4ccb1",
+    "storage_bucket": "resolve-4ccb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55155939265:android:00e5c892e0ece223190140",
+        "android_client_info": {
+          "package_name": "com.example.resolve"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55155939265-2srphe62o9qvq0ja96ppprfimk67ol2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjzKX-GXfey9YNUs_MvvDoPkMx9FyjvBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55155939265-2srphe62o9qvq0ja96ppprfimk67ol2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="time"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time"
+        android:layout_margin="10dp"
+        android:background="@drawable/white"
+        android:elevation="5dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/subject"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subject"
+            android:text="categories"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_toLeftOf="@+id/viewmore"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category"
+            android:text="MessaFDdfsdfsdddfsdfsdfdsfsdsdeterretfsdgesodjoasdjosadoasjdoisjdoisjdoadoaisjdoajdossodjs"
+            android:lines="2"
+
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/viewmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+           android:layout_below="@id/category"
+            android:background="#00000000"
+            android:layout_marginLeft="5dp"
+
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:layout_marginTop="15dp"
+            android:drawableTint="@color/teal_700"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold"
+
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

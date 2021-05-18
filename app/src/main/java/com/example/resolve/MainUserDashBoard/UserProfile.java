@@ -1,9 +1,11 @@
 package com.example.resolve.MainUserDashBoard;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -65,6 +67,7 @@ public class UserProfile extends AppCompatActivity {
 
         Query checkUser= FirebaseDatabase.getInstance().getReference("AllUsers").orderByKey().equalTo(adMn);
         checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists()){
@@ -74,7 +77,10 @@ public class UserProfile extends AppCompatActivity {
                     name.setText(snapshot.child(adMn).child("name").getValue(String.class));
                     if(verfi.getText().equals("skipped"))
                         scanner.setVisibility(View.VISIBLE);
-
+                    if(verfi.getText().equals("verified"))
+                    {
+                        verfi.setTextColor(getColor(R.color.teal_7001));
+                    }
                     linearLayout.setVisibility(View.VISIBLE);
 
                 }

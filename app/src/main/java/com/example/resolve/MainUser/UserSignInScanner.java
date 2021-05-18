@@ -1,11 +1,13 @@
 package com.example.resolve.MainUser;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
 import android.app.DownloadManager;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -59,6 +61,7 @@ public class UserSignInScanner extends AppCompatActivity implements ZXingScanner
                 }).check();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void handleResult(Result rawResult) {
         String email= FirebaseAuth.getInstance().getCurrentUser().getEmail();
@@ -77,6 +80,8 @@ public class UserSignInScanner extends AppCompatActivity implements ZXingScanner
             myRef.child(adMn).child("name").setValue(name);
             UserProfile.name.setText(name);
             UserProfile.verfi.setText("verified");
+            UserProfile.verfi.setTextColor(getColor(R.color.teal_7001));
+
             UserProfile.stat.setText("Verification Completed");
             UserProfile.scanner.setVisibility(View.GONE);
 

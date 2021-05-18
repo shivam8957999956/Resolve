@@ -36,14 +36,29 @@
             android:orientation="vertical"
             android:padding="5dp"
             android:background="@color/lighwhite">
-
             <TextView
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Category"
+                android:layout_marginTop="2dp"
+                android:text="subject"
                 android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="subject"
+                android:textColor="@color/grey"
                 android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/category"
@@ -51,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:text="Category"
                 android:textColor="@color/grey"
-                android:textSize="18sp" />
+                android:textSize="15sp" />
 
 
             <RelativeLayout
@@ -72,28 +87,13 @@
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:text="End thread"
-                  android:textColor="@color/teal_700"
+                  android:textColor="@color/teal_200"
                   android:textStyle="bold"
                   android:background="#00000000"
                   android:layout_alignParentRight="true"/>
             </RelativeLayout>
 
-            <TextView
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="subject"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/subject"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="subject"
-                android:textColor="@color/grey"
-                android:textSize="18sp" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:orientation="vertical"

@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Resolve">
-        <activity android:name=".AdminPage.MainActivityad"></activity>
+        <activity android:name=".MainUserDashBoard.NewTestActivity"></activity>
+        <activity android:name=".AdminPage.MainActivityad" />
         <activity android:name=".DetailProblem" />
         <activity android:name=".AdminPage.AdminAllProblems" />
         <activity android:name=".MainUserDashBoard.ExpandProblems" />

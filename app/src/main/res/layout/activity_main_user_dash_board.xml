@@ -36,16 +36,22 @@
             android:layout_height="match_parent"
             android:layout_below="@+id/menu"
             android:layout_marginTop="40dp"
-            android:background="@drawable/whit"
+
             android:elevation="5dp"
-            android:padding="10dp">
+            android:orientation="vertical"
+            android:padding="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Statistics"
-                android:textColor="@color/black"
-                android:textSize="20sp"></TextView>
+                android:text="Announce"
+                android:textColor="@color/lighwhite"
+                android:textSize="15sp"></TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:id="@+id/recycler"/>
         </LinearLayout>
 
     </RelativeLayout>
@@ -61,7 +67,7 @@
             android:layout_marginTop="14dp"
             android:orientation="vertical">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="14dp"
@@ -69,7 +75,12 @@
                 android:elevation="5dp"
                 android:onClick="registerNewComplains"
                 android:padding="15dp">
-
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    app:tint="@color/white"
+                    android:src="@drawable/ic_baseline_list_alt_24"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -78,9 +89,9 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-            </RelativeLayout>
+            </LinearLayout>
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="14dp"
@@ -88,6 +99,12 @@
                 android:elevation="5dp"
                 android:onClick="traceYourComplain"
                 android:padding="15dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    app:tint="@color/white"
+                    android:src="@drawable/ic_baseline_track_changes_24"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -97,15 +114,21 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-            </RelativeLayout>
+            </LinearLayout>
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="14dp"
                 android:background="@drawable/green_hollowbox"
                 android:elevation="5dp"
                 android:padding="15dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    app:tint="@color/white"
+                    android:src="@drawable/ic_baseline_batch_prediction_24"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -115,26 +138,31 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-            </RelativeLayout>
+            </LinearLayout>
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-
                 android:background="@drawable/light_green"
                 android:elevation="5dp"
                 android:padding="15dp">
-
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_baseline_edgesensor_high_24"
+                    app:tint="@color/lighwhite"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Transpirancy"
+                    android:text="Transparency"
                     android:textColor="@color/white"
                     android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
                     android:textStyle="bold" />
 
-            </RelativeLayout>
+            </LinearLayout>
 
 
         </LinearLayout>

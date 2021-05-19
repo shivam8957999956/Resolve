@@ -53,8 +53,8 @@ public class UserSignIn extends AppCompatActivity {
     }
     public  void userSignInFinalStep(View v){
 //      startActivity(new Intent(getApplicationContext(),UserSignInFinal.class));
-        String adNum=addmissionNumber.getEditText().getText().toString().toLowerCase();
-        String email=emailAddress.getEditText().getText().toString().toLowerCase();
+        String adNum=addmissionNumber.getEditText().getText().toString().trim().toLowerCase();
+        String email=emailAddress.getEditText().getText().toString().trim().toLowerCase();
         String pass=password.getEditText().getText().toString();
         String conP=confirmPassword.getEditText().getText().toString();
         mAuth = FirebaseAuth.getInstance();

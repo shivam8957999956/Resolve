@@ -46,13 +46,13 @@ public class AdminSignIn extends AppCompatActivity {
         String pos=position.getEditText().getText().toString().toLowerCase().trim();
         String pass=password.getEditText().getText().toString().toLowerCase().trim();
         String conPass=confirmPassword.getEditText().getText().toString().toLowerCase().trim();
-//        if(email.indexOf("@iitism.ac.in")<0)
-//        {
-//            emailAddress.setError("This email domain not allowed");
-//            return;
-//        }
-//        emailAddress.setError(null);
-//        emailAddress.setErrorEnabled(false);
+        if(email.indexOf("@iitism.ac.in")<0)
+        {
+            emailAddress.setError("This email domain not allowed");
+            return;
+        }
+        emailAddress.setError(null);
+        emailAddress.setErrorEnabled(false);
 
         if(pass.length()<6)
         {
